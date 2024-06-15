@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            /* Background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .business-card {
+            position: relative;
+            width: 350px;
+            border-radius: 16px;
+            overflow: hidden;
+            /* Ensures the content respects the border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 21px auto;
+            /* Center the card on the page */
+            background-color: #fff;
+            /* Background color */
+            z-index: 1;
+        }
+
+        .business-card1 {
+            position: relative;
+            width: 350px;
+            border-radius: 16px;
+            overflow: hidden;
+            /* Ensures the content respects the border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0px auto;
+            /* Center the card on the page */
+            background-color: #fff;
+            /* Background color */
+            z-index: 1;
+        }
+
+        /* 
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff; 
+    position: relative;
+    top: -50px; 
+    left: calc(50% - 50px); 
+    background-color: #fff;
+    z-index: 2;
+  } */
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 2px solid #cac3c3;
+            position: relative;
+            top: -5px;
+            left: calc(74% - 50px);
+            background-color: #fff;
+            z-index: 2;
+        }
+
+        .info {
+            position: relative;
+            padding: 60px 20px 0px;
+            z-index: 1;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .company-logo {
+            position: relative;
+            display: block;
+            margin: 20px auto;
+            width: 168px;
+            top: -58px;
+            z-index: 1;
+        }
+
+        .footer {
+            padding: 10px 20px;
+            text-align: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        svg {
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .data-points {
+            color: white;
+            margin-bottom: 5px;
+            font-size: 14px;
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <section id="home">
+        <div class="business-card">
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M500, 100 C350, 200 150, 0 0, 100 L0, 00 L500, 0 Z"
+                    style="stroke: none; fill: rgb(137 195 52);">
+                </path>
+            </svg>
+
+            <div class="header" style="left: 14px;position: relative;top: 135px;">
+                <div class="name" style="font-size: 24px; font-weight: 600;">Jhonsan</div>
+                <div class="title">Managing Director</div>
+            </div>
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Profile Picture"
+                class="profile-pic">
+            <div class="info">
+                <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Company Logo"
+                    class="company-logo" style="margin-top: 53px;">
+
+                <div class="footer" style="background-color: rgb(137 195 52); margin-top: -21px; line-height: 24px; ">
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-phone"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Tel: +971 4 00 44 200
+                    </div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-mobile-alt"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Mobile: +971 50 04 44 200
+                    </div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-envelope"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> E-mail: <a
+                            href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                            data-cfemail="d3bdb2beb693b7b2aabcb5b7a6b1b2bafdb0bcbe">[email&#160;protected]</a></div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-building"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Place Name: Business
+                        Center</div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i
+                            class="fas fa-map-marker-alt"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Block C-8, 1st Floor, Name
+                        A Building,</div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-map-pin"
+                            style="margin-right: 10px; width: 20px; text-align: center;  "></i> Block C-8, 1st Floor,
+                        Name A Building,</div>
+                    <div class="data-points"
+                        style=" display: flex; align-items: center; color: white;font-size: 14px; margin-bottom: 15px;">
+                    </div>
+                </div>
+
+            </div>
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet"
+                style="position: absolute; bottom: 0; left: 0; z-index: -1;     margin-top: 58px; ">
+                <path d="M0,400 C150,300 350,500 500,400 L500,500 L0,500 Z"
+                    style="stroke: none; fill: rgb(137 195 52);;">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+
+
+    <section id="contact">
+        <div class="business-card">
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M500, 100 C350, 200 150, 0 0, 100 L0, 00 L500, 0 Z"
+                    style="stroke: none; fill: rgb(137 195 52);">
+                </path>
+            </svg>
+
+            <div class="header" style="left: 14px;position: relative;top: 135px;">
+                <div class="name" style="font-size: 20px; font-weight: 600; position: relative;">
+                    Contact
+                    <div
+                        style="width: 8%; height: 4px; background-color: rgb(137, 195, 52); position: absolute; bottom: -9px; left: 0;">
+                    </div>
+                </div>
+
+            </div>
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Profile Picture"
+                class="profile-pic">
+            <div class="info">
+                <p
+                    style=" color: black;  font-family: system-ui; margin-top: 53px; margin-bottom: 8px; margin-left: 15px; margin-bottom: 81px; margin-top: -13px; ">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit </p>
+
+
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/QR_Code_Example.svg/1200px-QR_Code_Example.svg.png"
+                    alt="Company Logo" class="company-logo"
+                    style="margin-top: 53px; width: 120px; margin-bottom: -22px;">
+                <div class="footer" style="background-color: rgb(137 195 52); margin-top: 15px; line-height: 24px;">
+
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-facebook-f"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> facebook.com/username
+                    </div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-instagram"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Instagram.com/username
+                    </div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-twitter"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Twitter.com/username</div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-linkedin-in"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> linkedin.com/in/username
+                    </div>
+                    <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-whatsapp"
+                            style="margin-right: 10px; width: 20px; text-align: center;"></i> wa.me/+971 50 04 44 200
+                    </div>
+                </div>
+
+
+            </div>
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet"
+                style="position: absolute; bottom: 0; left: 0; z-index: -1;     margin-top: 114px; ">
+                <path d="M0,400 C150,300 350,500 500,400 L500,500 L0,500 Z"
+                    style="stroke: none; fill: rgb(137 195 52);;">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="portfolio">
+        <div class="business-card">
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M500, 100 C350, 200 150, 0 0, 100 L0, 00 L500, 0 Z"
+                    style="stroke: none; fill: rgb(137 195 52);">
+                </path>
+            </svg>
+
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Profile Picture"
+                class="profile-pic" style="margin-top: 31px; margin-bottom: -33px;">
+
+            <div class="name"
+                style="font-size: 21px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: -26px; margin-left: 15px; margin-top: -2px;">
+                Portfolio
+                <div
+                    style="width: 8%; height: 4px; background-color: rgb(137 195 52); position: absolute; bottom: -9px; left: 0; ">
+                </div>
+            </div>
+            <p
+                style=" color: black;  font-family: system-ui; margin-top: 53px; margin-bottom: 8px; margin-left: 15px; ">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit
+            </p>
+
+            <div style="display: flex; justify-content: space-around; margin-top: 33px; ">
+
+
+
+                <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 1"
+                        style="border-radius: 50%; width: 80px; height: 60px;">
+                    <p style="font-size: 14px;">Image 1 description</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 2"
+                        style="border-radius: 50%; width: 80px; height: 60px;">
+                    <p style="font-size: 14px;">Image 2 description</p>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: space-around; margin-top: 27px; margin-bottom: -23px; ">
+                <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 1"
+                        style="border-radius: 50%; width: 80px; height: 60px;">
+                    <p style="font-size: 14px;">Image 1 description</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 2"
+                        style="border-radius: 50%; width: 80px; height: 60px;">
+                    <p style="font-size: 14px;">Image 2 description</p>
+                </div>
+            </div>
+            <div class="info">
+
+                <div class="footer" style="background-color: rgb(137 195 52); margin-top: 30px; line-height: 24px; ">
+                </div>
+
+            </div>
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet"
+                style="position: absolute; bottom: 0; left: 0; z-index: -1;     margin-top: 241px; ">
+                <path d="M0,400 C150,300 350,500 500,400 L500,500 L0,500 Z"
+                    style="stroke: none; fill: rgb(137 195 52);;">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+
+
+    <section id="about" style="display: none;">
+        <div class="business-card">
+
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M500, 100 C350, 200 150, 0 0, 100 L0, 00 L500, 0 Z"
+                    style="stroke: none; fill: rgb(137 195 52);">
+                </path>
+            </svg>
+
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Profile Picture"
+                class="profile-pic" style="margin-top: 31px; margin-bottom: -33px;">
+
+            <div class="name"
+                style="font-size: 21px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: -26px; margin-left: 15px; margin-top: -4px;">
+                About
+                <div
+                    style="width: 8%; height: 4px; background-color: rgb(137 195 52); position: absolute; bottom: -9px; left: 0; ">
+                </div>
+            </div>
+            <div class="info">
+                <p style="padding: 14px; font-family: system-ui; margin-top: -20px; margin-bottom: 32px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque </p>
+
+                <div class="name"
+                    style="font-size: 20px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: -26px; margin-left: 15px; margin-top: -15px;">
+                    Education
+                    <div
+                        style="width: 8%; height: 4px; background-color: rgb(137 195 52); position: absolute; bottom: -9px; left: 0; ">
+                    </div>
+                </div>
+                <p style="padding: 14px; font-family: system-ui; margin-top: 41px; margin-bottom: 32px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                </p>
+
+                <div class="data-points" style="display: flex; margin-top: -22px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(137 195 52); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-points" style="display: flex; margin-top: 18px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(137 195 52); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-points" style="display: flex; margin-top: 18px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(137 195 52); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="footer"
+                    style="background-color: rgb(137 195 52); margin-top: 30px; line-height: 24px; padding-top: 10px; ">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="work" style="display: none;">
+        <div class="business-card">
+            <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+                <path d="M500, 100 C350, 200 150, 0 0, 100 L0, 00 L500, 0 Z"
+                    style="stroke: none; fill: rgb(137 195 52);">
+                </path>
+            </svg>
+
+            <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Profile Picture"
+                class="profile-pic" style="margin-top: 31px; margin-bottom: -33px;">
+
+
+            <div class="info">
+
+                <div class="name"
+                    style="font-size: 20px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: -26px; margin-left: 15px; margin-top: -62px;">
+                    Experience
+                    <div
+                        style="width: 8%; height: 4px; background-color: rgb(137 195 52); position: absolute; bottom: -9px; left: 0; ">
+                    </div>
+                </div>
+                <p style="padding: 14px; font-family: system-ui; margin-top: 41px; margin-bottom: 32px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit
+                <div class="data-points" style="display: flex; margin-top: -22px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(137 195 52); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-points" style="display: flex; margin-top: 18px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(137 195 52); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-points" style="display: flex; margin-top: 18px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(137 195 52); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info">
+
+                    <div class="footer"
+                        style="background-color: rgb(137 195 52); margin-top: -38px; line-height: 24px; ">
+
+                        <div class="name"
+                            style="font-size: 16px; margin-left: -19px; color: white;  font-weight: 600; position: relative; margin-bottom: 16px; padding: 14px; ">
+                            Our Work
+                            <div
+                                style="width: 7%; height: 2px; background-color: white; position: absolute; bottom: 9px; left: 0; margin-left: 14px;">
+                            </div>
+                        </div>
+
+                        <p style=" color: white;  font-family: system-ui; margin-top: -4px; margin-bottom: 8px;">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="business-card1"
+        style="display: flex; justify-content: space-around;  padding: 13px 0; margin-bottom: 15px; ">
+
+        <a href="#" id="home_btn"
+            style="text-decoration: none; color: #000; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://mastermindsgroup.org/Temp-Static-Files/home.png" style="width: 24px; height: 24px;" />
+            <span style="font-size: 10px; margin-top: 6px;">Home</span>
+        </a>
+
+        <a href="#" id="about_btn"
+            style="text-decoration: none; color: #000; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://mastermindsgroup.org/Temp-Static-Files/information-button.png"
+                style="width: 24px; height: 24px;" />
+            <span style="font-size: 10px; margin-top: 6px;">About</span>
+        </a>
+        <a href="#work"
+            style="text-decoration: none; color: #000; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://mastermindsgroup.org/Temp-Static-Files/work.png" style="width: 24px; height: 24px;" />
+            <span style="font-size: 10px; margin-top: 6px;">Work</span>
+        </a>
+
+        <a href="#portfolio"
+            style="text-decoration: none; color: #000; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://mastermindsgroup.org/Temp-Static-Files/play-button.png"
+                style="width: 24px; height: 24px;" />
+            <span style="font-size: 10px; margin-top: 6px;">Portfolio</span>
+        </a>
+
+        <a href="#contact"
+            style="text-decoration: none; color: #000; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <img src="https://mastermindsgroup.org/Temp-Static-Files/phone-call.png"
+                style="width: 24px; height: 24px;" />
+            <span style="font-size: 10px; margin-top: 6px;">Contact</span>
+        </a>
+
+    </div>
+
+
+
+
+
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Hide all sections initially except for 'home'
+            $('#about, #contact, #portfolio, #work').hide();
+
+            $('#home_btn').click(function () {
+                // Hide all sections
+                $('#about, #contact, #portfolio, #work').hide();
+                // Show the clicked section
+                $('#home').show();
+            });
+
+            $('#about_btn').on('click', function () {
+                // Hide all sections
+                $('#home, #contact, #portfolio, #work').hide();
+                $('#about').show();
+            });
+
+            $('a[href="#contact"]').click(function () {
+                // Hide all sections
+                $('#home, #about, #portfolio, #work').hide();
+                $('#contact').show();
+            });
+
+            $('a[href="#portfolio"]').click(function () {
+                // Hide all sections
+                $('#home, #about, #contact, #work').hide();
+                $('#portfolio').show();
+            });
+
+            $('a[href="#work"]').click(function () {
+                // Hide all sections
+                $('#home, #about, #contact, #portfolio').hide();
+                $('#work').show();
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>
