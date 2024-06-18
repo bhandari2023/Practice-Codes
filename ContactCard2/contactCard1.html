@@ -55,7 +55,7 @@
             /* Make it circular */
             overflow: hidden;
             /* Ensure the image doesn't overflow the container */
-            border: 5px solid #fefefe;
+            border: 3px solid #fefefe;
             /* Border around the image */
             background-color: #fefefe;
             /* Background color if image doesn't cover the container */
@@ -83,11 +83,11 @@
         }
 
         .header {
-            border-bottom: 5px solid white;
+
             position: relative;
             background-color: black;
+            display: flexbox;
 
-            display: flex;
 
 
         }
@@ -96,10 +96,10 @@
 
         .logo {
             display: flexbox;
-            margin-top: 200px;
 
+            margin-top: 40px;
 
-            padding-left: 25px;
+            padding-left: 20px;
 
 
         }
@@ -109,41 +109,38 @@
             /* Set your profile picture container width */
             height: 100px;
             /* Set your profile picture container height */
-            border-radius: 50%;
+            margin-bottom: -10px;
             /* Make it circular */
             overflow: hidden;
         }
 
         .title {
-            font-family: 'Times New Roman', Times, serif;
-
+            font-family: serif;
             display: flex;
             color: #fefefe;
             text-align: center;
             justify-content: flex-start;
-
-            font-size: 20px;
-            font-weight: 100;
-            width: 150px;
+            font-stretch: condensed;
+            font-size: 1.5rem;
+            font-weight: 40;
+            margin-bottom: -10px;
+            margin-right: 20px;
 
 
 
         }
 
         .title2 {
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 24px;
-            display: flexbox;
+            font-family: serif;
+            display: flex;
             color: #fefefe;
             text-align: center;
-            justify-content: left;
-            margin-right: 50px;
-            font-size: 17px;
+            font-size: 1.2rem;
             font-weight: 100;
-            width: fit-content;
-            padding-inline: 10px;
-            overflow: hidden;
-            margin: 2px;
+            width: 150px;
+            padding-left: 10px;
+            margin-top: -5px;
+
         }
 
         .footer {
@@ -152,6 +149,7 @@
             text-align: left;
             position: relative;
             z-index: 1;
+            border-top: 4px solid #fefefe;
         }
     </style>
 </head>
@@ -159,63 +157,67 @@
 <body>
     <section id="home">
         <div class="business-card">
-            <div>
-                <div class="header row">
-                    <div class="logo col-6">
-                        <div>
-                            <img src="https://media.istockphoto.com/id/2155231611/photo/green-recycle-symbol-on-isolated-on-transparent-background-png-file.jpg?s=612x612&w=is&k=20&c=rK3u0prczQizHyrZcIivP3ETWHo26OrzM6Ur-ckACf0="
-                                alt="Logo Image">
-                        </div>
-                        <div class="title">
-                            Company Name
-                        </div>
-                        <div class="title2">
-                            Activities
-                        </div>
-                    </div>
-                    <div class="profile col-6">
+
+            <div class="header">
+                <div class="profile"
+                    style="display: flex;justify-content: flex-end; align-items: center; padding: 10px; text-align: center;">
+                    <div>
                         <div class="image2">
-                            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Profile image">
+                            <img src="./images/Picture (1).png" alt="Profile image" style="display: block;">
                         </div>
-                        <div class="title">
-                            Your Name
-                        </div>
-                        <div class="title2">
-                            Designation
-                        </div>
+                        <div class="title">Your Name</div>
+                        <div class="title2">designation</div>
                     </div>
-
-
                 </div>
-                <div class="footer"
-                    style="background-color: rgb(12, 12, 12); margin-top: -0; line-height: 24px;  color: #fefefe; ">
-                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-phone"
-                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Tel: +971 4 00 44 200
+                <div class="logo ">
+                    <div>
+                        <img src="/images/Logo.png" style="margin-left: 40px;" alt="Logo Image">
                     </div>
-                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-mobile-alt"
-                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Mobile: +971 50 04 44 200
+                    <div
+                        style="color:#fefefe;font-size:1.5rem ; font-family: sans-serif; font-weight: 700;font-stretch:ultra-condensed; margin-left: 20px;">
+                        COMPANY NAME
                     </div>
-                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-envelope"
-                            style="margin-right: 10px; width: 20px; text-align: center;"></i> E-mail: <a
-                            href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                            data-cfemail="d3bdb2beb693b7b2aabcb5b7a6b1b2bafdb0bcbe">[email&#160;protected]</a></div>
-                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-building"
-                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Place Name: Business
-                        Center</div>
-                    <div class="data-points" style="display: flex; align-items: center;"><i
-                            class="fas fa-map-marker-alt"
-                            style="margin-right: 10px; width: 20px; text-align: center;"></i> Block C-8, 1st Floor, Name
-                        A Building,</div>
-                    <div class="data-points" style="display: flex; align-items: center;"><i class="fas fa-map-pin"
-                            style="margin-right: 10px; width: 20px; text-align: center;  "></i> Block C-8, 1st Floor,
-                        Name A Building,</div>
-                    <div class="data-points"
-                        style=" display: flex; align-items: center; color: white;font-size: 14px; margin-bottom: 15px;">
+                    <div
+                        style="color: white; margin-left: 60px; margin-top: -10px; font-family: serif; font-size: 1rem; font-weight: 100;">
+                        ACTIVITIES
                     </div>
+                </div>
+
+
+
+            </div>
+            <div class="footer"
+                style="background-color: rgb(12, 12, 12); margin-top: -0; line-height: 24px;  color: #fefefe;  padding-left: 40px; font-size: 1rem; font-family: serif;">
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Mobile.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 5px; ">+971 4 00 44
+                    200
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Telephone.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 5px; "> +971 50 04 44
+                    200
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Mail.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 8px; ">info@companyname.com</a>
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/web.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 8px; ">
+                    www.companyname.com</div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Location.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 8px; margin-bottom:10px ">
+                    Suite: 000 •
+                    2nd Floor Hero
+                    Shopping Center
+                    Dubai • UAE
                 </div>
 
             </div>
+
+
 
     </section>
     <section id="contact">
@@ -484,7 +486,7 @@
                     </div>
                 </div>
                 <div class="name"
-                style="font-size: 20px; margin-left: -19px; color: rgb(12, 12, 12);  font-weight: 600; position: relative; margin-bottom: 26px; margin-left: 15px;">
+                    style="font-size: 20px; margin-left: -19px; color: rgb(12, 12, 12);  font-weight: 600; position: relative; margin-bottom: 26px; margin-left: 15px;">
                     Our Work
                     <div
                         style="width: 7%; height: 2px; background-color: white; position: absolute; bottom: 9px; left: 0; margin-left: 14px;">
