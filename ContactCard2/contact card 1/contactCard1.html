@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            /* Background color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .business-card {
+            position: relative;
+            width: 350px;
+            border-radius: 16px;
+            overflow: hidden;
+            /* Ensures the content respects the border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 21px auto;
+            /* Center the card on the page */
+            background-color: #fff;
+            /* Background color */
+            z-index: 1;
+        }
+
+        .business-card1 {
+            position: relative;
+            width: 350px;
+            border-radius: 16px;
+            overflow: hidden;
+            /* Ensures the content respects the border radius */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0px auto;
+            /* Center the card on the page */
+            background-color: #090909;
+            /* Background color */
+            z-index: 1;
+        }
+
+        .image1,
+        .image2 {
+            width: 100px;
+            /* Set your profile picture container width */
+            height: 100px;
+            /* Set your profile picture container height */
+            border-radius: 50%;
+            /* Make it circular */
+            overflow: hidden;
+            /* Ensure the image doesn't overflow the container */
+            border: 3px solid #fefefe;
+            /* Border around the image */
+            background-color: #fefefe;
+            /* Background color if image doesn't cover the container */
+            margin-right: 50px;
+            margin-top: 20px;
+            /* Adjust margin to move the image a little to the left */
+        }
+
+        .image1 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Maintain aspect ratio and cover the container */
+            border-radius: 50%;
+            /* Ensure the image remains circular */
+        }
+
+        .image2 img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Maintain aspect ratio and cover the container */
+            border-radius: 50%;
+            /* Ensure the image remains circular */
+        }
+
+        .header {
+
+            position: relative;
+            background-color: black;
+            display: flexbox;
+
+
+
+        }
+
+
+
+        .logo {
+            display: flexbox;
+
+            margin-top: 40px;
+
+            padding-left: 20px;
+
+
+        }
+
+        .logo img {
+            width: 100px;
+            /* Set your profile picture container width */
+            height: 100px;
+            /* Set your profile picture container height */
+            margin-bottom: -10px;
+            /* Make it circular */
+            overflow: hidden;
+        }
+
+        .title {
+            font-family: serif;
+            display: flex;
+            color: #fefefe;
+            text-align: center;
+            justify-content: flex-start;
+            font-stretch: condensed;
+            font-size: 1.5rem;
+            font-weight: 40;
+            margin-bottom: -10px;
+            margin-right: 20px;
+
+
+
+        }
+
+        .title2 {
+            font-family: serif;
+            display: flex;
+            color: #fefefe;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 100;
+            width: 150px;
+            padding-left: 10px;
+            margin-top: -5px;
+
+        }
+
+        .footer {
+            margin-top: 5px;
+            padding: 10px 10px;
+            text-align: left;   
+            position: relative;
+            z-index: 1;
+            border-top: 3px solid #fefefe;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="home">
+        <div class="business-card">
+
+            <div class="header">
+                <div class="profile"
+                    style="display: flex;justify-content: flex-end; align-items: center; padding: 10px; text-align: center;">
+                    <div>
+                        <div class="image2">
+                            <img src="./images/Picture (1).png" alt="Profile image" style="display: block;">
+                        </div>
+                        <div class="title">Your Name</div>
+                        <div class="title2">designation</div>
+                    </div>
+                </div>
+                <div class="logo ">
+                    <div>
+                        <img src="/images/Logo.png" style="margin-left: 55px; width: 70px; height: 70px;"
+                            alt="Logo Image">
+                    </div>
+                    <div
+                        style="color:#fefefe;font-size:1.5rem ; font-family: sans-serif; font-weight: 700;font-stretch:ultra-condensed; margin-left: 20px;">
+                        COMPANY NAME
+                    </div>
+                    <div
+                        style="color: white; margin-left: 60px; margin-top: -10px; font-family: serif; font-size: 1.1rem; font-weight: 100;padding-bottom: 10px;">
+                        ACTIVITIES
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="footer"
+                style="background-color: rgb(12, 12, 12); margin-top: -0; line-height: 24px;  color: #fefefe;  padding-left: 40px; font-size: 1rem; font-family: serif;">
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Mobile.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 5px; ">+971 4 00 44
+                    200
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Telephone.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 5px; "> +971 50 04 44
+                    200
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Mail.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 8px; ">info@companyname.com</a>
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/web.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 8px; ">
+                    www.companyname.com</div>
+                <div class="data-points" style="display: flex; align-items: center;"><img src="./images/Location.png"
+                        alt="mobile Icon"
+                        style="height:25px; width: 25px; background-color: #090909; margin-right: 8px; margin-bottom:10px ">
+                    Suite: 000 •
+                    2nd Floor Hero
+                    Shopping Center
+                    Dubai • UAE
+                </div>
+
+            </div>
+
+
+
+    </section>
+    <section id="contact">
+        <div class="business-card">
+
+            <div class=" row" style="background-color: #090909;padding-bottom:10px; min-height: min-content;">
+                <div class=" col-6">
+
+                </div>
+                <div class="profile col-6">
+                    <div class="image2">
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Profile image">
+                    </div>
+                    <div class="title">
+                        Your Name
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="info">
+                <p style=" color: black;  font-family: system-ui; margin-bottom: 8px; margin-left: 15px;  ">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, fugiat assumenda! Cumque ut, sunt
+                    aliquid reiciendis non obcaecati! Laborum non unde officia, neque magnam magni est ipsam voluptatum
+                    repellendus laboriosam quis minima tempore in voluptatibus numquam dolorum dolores reprehenderit sit
+                    deleniti? Sint, molestiae quis numquam aperiam in vero commodi cum neque blanditiis, tempora
+                    sapiente eaque ullam eius quibusdam facere reprehenderit? </p>
+
+
+
+            </div>
+            <div class="footer"
+                style="background-color: rgb(12, 12, 12); margin-top: 15px; line-height: 24px;color: #fefefe;">
+
+                <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-facebook-f"
+                        style="margin-right: 10px; width: 20px; text-align: center;"></i> facebook.com/username
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-instagram"
+                        style="margin-right: 10px; width: 20px; text-align: center;"></i> Instagram.com/username
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-twitter"
+                        style="margin-right: 10px; width: 20px; text-align: center;"></i> Twitter.com/username</div>
+                <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-linkedin-in"
+                        style="margin-right: 10px; width: 20px; text-align: center;"></i> linkedin.com/in/username
+                </div>
+                <div class="data-points" style="display: flex; align-items: center;"><i class="fab fa-whatsapp"
+                        style="margin-right: 10px; width: 20px; text-align: center;"></i> wa.me/+971 50 04 44 200
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="business-card">
+            <div class=" row" style="background-color: #090909;padding-bottom:10px; min-height: min-content;">
+                <div class=" col-6">
+
+                </div>
+                <div class="profile col-6">
+                    <div class="image2">
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Profile image">
+                    </div>
+                    <div class="title">
+                        Your Name
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div>
+                <div class="name"
+                    style="font-size: 21px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: -26px; margin-left: 15px; margin-top: -2px;">
+                    Portfolio
+                    <div
+                        style="width: 8%; height: 4px; background-color: rgb(3, 3, 3); position: absolute; bottom: -9px; left: 0; ">
+                    </div>
+                </div>
+                <p
+                    style=" color: black;  font-family: system-ui; margin-top: 53px; margin-bottom: 8px; margin-left: 15px; ">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit amet,
+                    consectetuer adipiscing elit
+                </p>
+
+                <div style="display: flex; justify-content: space-around; margin-top: 33px; ">
+
+
+
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 1"
+                            style="border-radius: 50%; width: 80px; height: 60px;">
+                        <p style="font-size: 14px;">Image 1 description</p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 2"
+                            style="border-radius: 50%; width: 80px; height: 60px;">
+                        <p style="font-size: 14px;">Image 2 description</p>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-around; margin-top: 27px; margin-bottom: -23px; ">
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 1"
+                            style="border-radius: 50%; width: 80px; height: 60px;">
+                        <p style="font-size: 14px;">Image 1 description</p>
+                    </div>
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 50%;">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/11/Square-logo.png" alt="Image 2"
+                            style="border-radius: 50%; width: 60px; height: 60px;">
+                        <p style="font-size: 14px;">Image 2 description</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer"
+                style="background-color: rgb(5, 5, 5); margin-top: 30px; line-height: 24px; padding-top: 10px; ">
+            </div>
+        </div>
+
+    </section>
+    <section id="about" style="display: none;">
+        <div class="business-card">
+            <div class=" row" style="background-color: #090909;padding-bottom:10px; min-height: min-content;">
+                <div class=" col-6">
+
+                </div>
+                <div class="profile col-6">
+                    <div class="image2">
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Profile image">
+                    </div>
+                    <div class="title">
+                        Your Name
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="name"
+                style="font-size: 21px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: 10px; margin-left: 15px; margin-top: -4px;">
+                About
+                <div
+                    style="width: 8%; height: 4px; background-color: black; position: absolute; bottom: -9px; left: 0; ">
+                </div>
+            </div>
+            <div class="info">
+                <p style="padding: 14px; font-family: system-ui; margin-top: -20px; margin-bottom: 32px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque </p>
+
+                <div class="name"
+                    style="font-size: 20px; margin-left: -19px; color: black;  font-weight: 600; position: relative; margin-bottom: -26px; margin-left: 15px; margin-top: -15px;">
+                    Education
+                    <div
+                        style="width: 8%; height: 4px; background-color: rgb(11, 11, 11); position: absolute; bottom: -9px; left: 0; ">
+                    </div>
+                </div>
+                <p style="padding: 14px; font-family: system-ui; margin-top: 41px; margin-bottom: 32px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                </p>
+
+                <div class="data-points" style="display: flex; margin-top: -22px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: black; border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-points" style="display: flex; margin-top: 18px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color:black; border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="footer"
+                    style="background-color: rgb(5, 5, 5); margin-top: 30px; line-height: 24px; padding-top: 10px; ">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="work" style="display: none;">
+        <div class="business-card">
+            <div class=" row" style="background-color: #090909;padding-bottom:10px; min-height: min-content;">
+                <div class=" col-6">
+
+                </div>
+                <div class="profile col-6">
+                    <div class="image2">
+                        <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=1031&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Profile image">
+                    </div>
+                    <div class="title">
+                        Your Name
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="info">
+
+                <div class="name"
+                    style="font-size: 20px; margin-left: -19px; color: rgb(12, 12, 12);  font-weight: 600; position: relative; margin-bottom: 26px; margin-left: 15px;   ">
+                    Experience
+                    <div
+                        style="width: 8%; height: 4px; background-color: rgb(6, 6, 6); position: absolute; bottom: -9px; left: 0; ">
+                    </div>
+                </div>
+                <p style="padding: 14px; font-family: system-ui; margin-top: 6px; margin-bottom: 10px;">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit
+                <div class="data-points" style="display: flex; margin-top: -22px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(23, 23, 23); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="data-points" style="display: flex; margin-top: 18px; margin-left: 35px;">
+                    <div
+                        style="margin-right: 10px; width: 7px; height: 7px; background-color: rgb(14, 14, 14); border-radius: 50%; margin-top: 7px;">
+                    </div>
+                    <div
+                        style="display: flex; flex-direction: column; align-items: flex-start; color: black; font-size: 16px;">
+                        <b>Christ University</b>
+                        <div
+                            style="display: flex; justify-content: space-between; width: 100%; font-size: 14px; margin-top: 5px;">
+                            <span>Btech in CS - </span>
+                            <span>April 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="name"
+                    style="font-size: 20px; margin-left: -19px; color: rgb(12, 12, 12);  font-weight: 600; position: relative; margin-bottom: 26px; margin-left: 15px;">
+                    Our Work
+                    <div
+                        style="width: 7%; height: 2px; background-color: white; position: absolute; bottom: 9px; left: 0; margin-left: 14px;">
+                    </div>
+                </div>
+                <div class="info">
+                    <p style="padding: 14px; font-family: system-ui; margin-top: 6px; margin-bottom: 10px;">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit </p>
+
+                </div>
+
+                <div class="info">
+
+                    <div class="footer" style="background-color: rgb(12, 12, 12); line-height: 24px; ">
+
+
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+    </section>
+
+
+    <div class="business-card1"
+        style="display: flex; justify-content: space-around;  padding: 13px 0; margin-bottom: 15px; ">
+
+        <a href="#" id="home_btn"
+            style="text-decoration: none; color: #f5e9e9; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <i class="fa-solid fa-house"></i>
+            <span style="font-size: 10px; margin-top: 6px;">Home</span>
+        </a>
+
+        <a href="#" id="about_btn"
+            style="text-decoration: none; color: #f5e9e9; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <i class="fa-solid fa-circle-info"></i>
+            <span style="font-size: 10px; margin-top: 6px;">About</span>
+        </a>
+        <a href="#work"
+            style="text-decoration: none;color: #f5e9e9; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <i class="fa-solid fa-user"></i>
+            <span style="font-size: 10px; margin-top: 6px;">Work</span>
+        </a>
+
+        <a href="#portfolio"
+            style="text-decoration: none; color: #f5e9e9; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <i class="fa-solid fa-circle-play"></i>
+            <span style="font-size: 10px; margin-top: 6px;">Portfolio</span>
+        </a>
+
+        <a href="#contact"
+            style="text-decoration: none; color: #f5e9e9; text-align: center; display: flex; flex-direction: column; align-items: center;">
+            <i class="fa-solid fa-square-phone"></i>
+            <span style="font-size: 10px; margin-top: 6px;">Contact</span>
+        </a>
+
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js"
+        integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/962f45b7bf.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // Hide all sections initially except for 'home'
+            $('#about, #contact, #portfolio, #work').hide();
+
+            $('#home_btn').click(function () {
+                // Hide all sections
+                $('#about, #contact, #portfolio, #work').hide();
+                // Show the clicked section
+                $('#home').show();
+            });
+
+            $('#about_btn').on('click', function () {
+                // Hide all sections
+                $('#home, #contact, #portfolio, #work').hide();
+                $('#about').show();
+            });
+
+            $('a[href="#contact"]').click(function () {
+                // Hide all sections
+                $('#home, #about, #portfolio, #work').hide();
+                $('#contact').show();
+            });
+
+            $('a[href="#portfolio"]').click(function () {
+                // Hide all sections
+                $('#home, #about, #contact, #work').hide();
+                $('#portfolio').show();
+            });
+
+            $('a[href="#work"]').click(function () {
+                // Hide all sections
+                $('#home, #about, #contact, #portfolio').hide();
+                $('#work').show();
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>

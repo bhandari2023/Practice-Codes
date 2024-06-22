@@ -8,16 +8,45 @@
     <style>
         .business-card {
             position: relative;
-            width: 350px;
+            width: 200px;
             border-radius: 16px;
             overflow: hidden;
             /* Ensures the content respects the border radius */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 21px auto;
+            margin: 1px auto;
             /* Center the card on the page */
-            background-color: #fff;
+            background-color: #f19c9c;
             /* Background color */
             z-index: 1;
+            padding-bottom: -6px;
+
+        }
+
+        #svgFinal {
+            margin-bottom: -10px;
+        }
+
+        .inner-div {
+            width: 30px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.5);
+            /* semi-transparent background */
+            text-align: center;
+            line-height: 50px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+
+
+        .round-image {
+            border-radius: 50%;
+            /* Makes the image round */
+            width: 100%;
+            /* Ensure the image fills the foreignObject */
+            height: 100%;
+            /* Ensure the image fills the foreignObject */
         }
     </style>
 </head>
@@ -26,9 +55,8 @@
 
     <section id="home">
         <div class="business-card">
-            <svg version="1.0" preserveAspectRatio="xMidYMid meet" height="321" viewBox="0 0 141.75 240.749997"
-                zoomAndPan="magnify" width="188" xmlns:xlink="http://www.w3.org/1999/xlink"
-                xmlns="http://www.w3.org/2000/svg">
+            <svg id="svgFinal" version="1.0" preserveAspectRatio="xMidYMid meet" viewBox="1 4 140 236"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" class="business-card-svg">
                 <defs>
                     <g></g>
                     <clipPath id="d6bb7fd891">
@@ -213,9 +241,17 @@
                 <g clip-path="url(#75c630eb7a)">
                     <g clip-path="url(#faea1e098f)">
                         <g clip-path="url(#01b760657f)">
+
                             <path fill-rule="nonzero" fill-opacity="1"
                                 d="M -12.558594 5.132812 L 59.082031 91.898438 L -32.429688 167.457031 L -104.070312 80.691406 Z M -12.558594 5.132812"
                                 fill="#bbb5b5"></path>
+
+
+                            <foreignObject x="12" y="73" width="30" height="30">
+                                <img xmlns="http://www.w3.org/1999/xhtml" src="./images/Picture (1).png"
+                                    alt="Sample Image" class="round-image" />
+                            </foreignObject>
+
                         </g>
                     </g>
                 </g>
@@ -233,7 +269,7 @@
                         <g clip-path="url(#50db8959f1)">
                             <path fill-rule="nonzero" fill-opacity="1"
                                 d="M 71.679688 102.386719 L 176.613281 217.25 L 48.738281 334.070312 L -56.195312 219.207031 Z M 71.679688 102.386719"
-                                fill="#8b155e"></path>
+                                fill="#943495"></path>
                         </g>
                     </g>
                 </g>
